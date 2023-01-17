@@ -2,8 +2,12 @@
 <html lang="en">
 
 <head>
-  <title>Seven Dyz Kids Botique, Kids Wears | Contact us</title>
+  <title>Seven Dyz Kids Botique, Kids Wears | About us</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/36bc828296.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&amp;display=swap"
@@ -15,7 +19,15 @@
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/style.css">
-
+  <style>
+    .img-thumbnail {
+      cursor: pointer;
+    }
+    .modal-content {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 
 <body>
@@ -63,125 +75,61 @@
           <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
           <li class="nav-item"><a href="product.html" class="nav-link">Products</a></li>
-          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
-          <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item active"><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <section class="hero-wrap hero-wrap-2" style="background-image: url('images/contact_bg.jpg');"
+  <section class="hero-wrap hero-wrap-2" style="background-image: url('images/gallery_bg.jpg');"
     data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
       <div class="row no-gutters slider-text align-items-end">
         <div class="col-md-9 ftco-animate pb-5">
           <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home <i
-                  class="ion-ios-arrow-forward"></i></a></span> <span>Contact us <i
+                  class="ion-ios-arrow-forward"></i></a></span> <span>Gallery <i
                 class="ion-ios-arrow-forward"></i></span></p>
-          <h1 class="mb-0 bread">Contact Us</h1>
+          <h1 class="mb-0 bread">Gallery</h1>
         </div>
       </div>
     </div>
   </section>
-  <section class="ftco-section bg-light">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-12">
-          <div class="wrapper">
-            <div class="row no-gutters">
-              <div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
-                <div class="contact-wrap w-100 p-md-5 p-4">
-                  <h3 class="mb-4">Get in touch</h3>
-                  <div id="form-message-warning" class="mb-4"></div>
-                  <div id="form-message-success" class="mb-4">
-                    Your message was sent, thank you!
-                  </div>
-                  <form method="POST" id="contactForm" name="contactForm" class="contactForm">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="label" for="name">Full Name</label>
-                          <input type="text" class="form-control" name="name" id="name" placeholder="Name">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="label" for="email">Email Address</label>
-                          <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="label" for="subject">Subject</label>
-                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="label" for="#">Message</label>
-                          <textarea name="message" class="form-control" id="message" cols="30" rows="4"
-                            placeholder="Message"></textarea>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <input type="submit" value="Send Message" class="btn btn-primary">
-                          <div class="submitting"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-5 d-flex align-items-stretch">
-                <div class="info-wrap bg-primary w-100 p-md-5 p-4">
-                  <h3>Let's get in touch</h3>
-                  <p class="mb-4">We're open for any suggestion or just to have a chat</p>
-                  <div class="dbox w-100 d-flex align-items-start">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="fa fa-map-marker"></span>
-                    </div>
-                    <div class="text pl-3">
-                      <p><span>Address:</span> Karuvarakundu - Perinthalmanna Rd, Valamboor, Kerala 679322</p>
-                    </div>
-                  </div>
-                  <div class="dbox w-100 d-flex align-items-center">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="fa fa-phone"></span>
-                    </div>
-                    <div class="text pl-3">
-                      <p><span>Phone:</span> <a href="tel://918086114948">+91 808 611 4948</a></p>
-                    </div>
-                  </div>
-                  <div class="dbox w-100 d-flex align-items-center">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="fa fa-paper-plane"></span>
-                    </div>
-                    <div class="text pl-3">
-                      <p><span>Email:</span> <a
-                          href="#"><span
-                            class="__cf_email__"
-                            data-cfemail="caa3a4aca58ab3a5bfb8b9a3beafe4a9a5a7">info@senevdyz.com</span></a></p>
-                    </div>
-                  </div>
-                  <div class="dbox w-100 d-flex align-items-center">
-                    <div class="icon d-flex align-items-center justify-content-center">
-                      <span class="fa fa-globe"></span>
-                    </div>
-                    <div class="text pl-3">
-                      <p><span>Website:</span> <a href="#">sevendyz.com</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="images/baby wear.jpg" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" data-img-src="images/baby wear.jpg">
+      </div>
+      <div class="col-md-3">
+        <img src="images/girl_frock.jpg" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" data-img-src="images/girl_frock.jpg">
+      </div>
+      <div class="col-md-3">
+        <img src="images/about-3.jpg" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" data-img-src="images/about-3.jpg">
+      </div>
+      <div class="col-md-3">
+        <img src="images/about-2.jpg" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" data-img-src="images/about-2.jpg">
+      </div>
+      <div class="col-md-3">
+        <img src="images/gallery_bg.jpg" class="img-thumbnail" data-toggle="modal" data-target="#imageModal" data-img-src="images/gallery_bg.jpg">
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Modal -->
+  <div class="modal" id="imageModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img id="modalImage" src="" class="img-fluid">
         </div>
       </div>
     </div>
-  </section>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.46740362098!2d76.21872821480274!3d11.003515392167664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9832402cb6aff574!2zMTHCsDAwJzEyLjciTiA3NsKwMTMnMTUuMyJF!5e0!3m2!1sen!2sin!4v1673972846917!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+
+
   <footer class="footer">
     <div class="container-fluid px-lg-5">
       <div class="row">
@@ -216,9 +164,9 @@
                       <h2 class="footer-heading">Discover</h2>
                       <ul class="list-unstyled">
                         <li><a href="index.html" class="py-1 d-block">Home</a></li>
-                        <li><a href="about.html"
-                          class="py-1 d-block">About us</a></li>
+                        <li><a href="about.html" class="py-1 d-block">About us</a></li>
                         <li><a href="product.html" class="py-1 d-block">Products</a></li>
+                        <li><a href="#" class="py-1 d-block">How To Make Order</a></li>
                         <li><a href="gallery.html" class="py-1 d-block">Gallery</a></li>
                         <li><a href="contact.html" class="py-1 d-block">Contact Us</a></li>
                       </ul>
@@ -250,6 +198,13 @@
       </div>
     </div>
   </footer>
+  <script>
+    // Update modal image when clicked
+    $('.img-thumbnail').click(function() {
+      $('#modalImage').attr('src', $(this).data('img-src'));
+      console.log($(this).data('img-src'))
+    });
+  </script>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
