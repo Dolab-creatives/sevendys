@@ -119,6 +119,8 @@
       opacity: 1;
     }
   </style>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+  <a href="product.html"><button id="ord" title="Go to top"><i class="fa fa-shopping-cart"></i></button></a>
   <div class="wrap">
     <div class="container">
       <div class="row">
@@ -411,7 +413,9 @@
                     </a>
                   </div>
                 </div>
-                <a href="product.html"><h5 class="text-center">Baby Wear</h5></a>
+                <a href="product.html">
+                  <h5 class="text-center">Baby Wear</h5>
+                </a>
               </div>
             </div>
             <div class="item">
@@ -425,7 +429,9 @@
                     </a>
                   </div>
                 </div>
-                <a href="product.html"><h5 class="text-center">Girls Frock</h5></a>
+                <a href="product.html">
+                  <h5 class="text-center">Girls Frock</h5>
+                </a>
               </div>
             </div>
             <div class="item">
@@ -439,7 +445,9 @@
                     </a>
                   </div>
                 </div>
-                <a href="product.html"><h5 class="text-center">Boys Shirt</h5></a>
+                <a href="product.html">
+                  <h5 class="text-center">Boys Shirt</h5>
+                </a>
               </div>
             </div>
             <div class="item">
@@ -453,7 +461,9 @@
                     </a>
                   </div>
                 </div>
-                <a href="product.html"><h5 class="text-center">Jabala Baby</h5></a>
+                <a href="product.html">
+                  <h5 class="text-center">Jabala Baby</h5>
+                </a>
               </div>
             </div>
           </div>
@@ -461,7 +471,7 @@
       </div>
     </div>
   </section>
-  <section class="section-spacing inverse-bg">
+  <!-- <section class="section-spacing inverse-bg">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-6">
@@ -486,7 +496,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
   <!-- <section>
   <div class="row" style="margin-left: 95px;">
     <div class="card" style="width: 18rem;">
@@ -658,10 +668,10 @@
                     <div class="col-md-4 mb-md-0 mb-4">
                       <h2 class="footer-heading">Products</h2>
                       <ul class="list-unstyled">
-                        <li><a href="#" class="py-1 d-block">Baby Wear</a></li>
-                        <li><a href="#" class="py-1 d-block">Girls Frock</a></li>
-                        <li><a href="#" class="py-1 d-block">Boys Shirt</a></li>
-                        <li><a href="#" class="py-1 d-block">jabala Baby</a></li>
+                        <li><a href="product.html" class="py-1 d-block">Baby Wear</a></li>
+                        <li><a href="product.html" class="py-1 d-block">Girls Frock</a></li>
+                        <li><a href="product.html" class="py-1 d-block">Boys Shirt</a></li>
+                        <li><a href="product.html" class="py-1 d-block">jabala Baby</a></li>
                       </ul>
                     </div>
                     <div class="col-md-4 mb-md-0 mb-4">
@@ -697,10 +707,76 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </footer>
+  <script>
+   
+   // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    document.getElementById("ord").style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+    document.getElementById("ord").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+  </script>
+     <!-- WHATS APP INTTEGRATION START HERE -->
+
+
+     <script>
+      var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?58044';
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = url;
+      var options = {
+    "enabled":true,
+    "chatButtonSetting":{
+        "backgroundColor":"#4dc247",
+        "ctaText":"",
+        "borderRadius":"25",
+        "marginLeft":"0",
+        "marginBottom":"87",
+        "marginRight":"30",
+        "position":"right"
+    },
+    "brandSetting":{
+        "brandName":"SEVEN DYZ",
+        "brandSubTitle":"Typically replies within a day",
+        "brandImg":"https://i.ibb.co/568xsrP/whatsapp.jpg",
+        "welcomeText":"Hi, there!\nHow can I help you?",
+        "messageText":"Hello, I have a question about {{page_link}}",
+        "backgroundColor":"#0a5f54",
+        "ctaText":"Start Chat",
+        "borderRadius":"25",
+        "autoShow":false,
+        "phoneNumber":"918086061169"
+    }
+  };
+      s.onload = function() {
+          CreateWhatsappChatWidget(options);
+      };
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+  </script>
+        
+  
+      <!-- WHATS APP INTTEGRATION END HERE -->
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
